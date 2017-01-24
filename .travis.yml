@@ -1,0 +1,33 @@
+sudo: required
+
+dist: trusty
+
+before_install:
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended pgf latexmk
+
+script:
+- cat /etc/apt/sources.list
+- mkdir build
+- mkdir build/tex
+- pdflatex Calc2StudyGuide.tex
+- mv *.pdf build
+- cd tex
+- latexmk -pdf
+- latexmk -c
+- mv *.pdf ../build/tex/
+- cd ..
+
+before_deploy:
+- zip -r build.zip build
+
+# This is set up for a different repo, in order to use this one you'll have
+# to turn on travis from this account.
+deploy:
+  provider: releases
+  api_key:
+    secure: hkOJl4YG0a/An92w4MFY7Hc4vq5ujIYx2Ph1y5YCdEKmFH5wmEMtdPcQGULC4y/UhinHXJ1QxkHP1+AU5SHx8u78HMySGdeRKorGrA9XdrNUkLcU4qDvpit62wocliKDlJMEYVJcIow3YGZ5jP1qoOGe4s8VXphog5I2VQ60LjLVmSOxuh05mBD9q6rWfZzKc+I6LaQWgPfDFOhXrkniTIa1xoGfnhYp6yq2XdBL/R1H8HguiPwjjF8xu6D2FAQVUvfn/0ga0exp8VQt8zN99hcawAxYVhQfqR4KSe8RB0BUsYHEHNSHTLyNtaO1NdAc5msoesupWFD7J3qK+dhnXta1vEEXW7OKrJNyv6v4ZjmEloRkpfZ3+s2R2n3iuEa92wK+LWc/WNLIk+7cgTlR2IU3Er5DUKG4wnzhbxg6jYRaEnGi+6fIyHJLZYKQfLKiEfZy29mvW163cvT1fNqa3vAxrzp8Bm3d1u6xIdib8n9wIJdtE9BU2beuDzBdviTUpwCAaFIzm+MaYodXVnMx800dEqBnKgKBKJGuOKpUvC4q275upm5+pdA0mAAATFxtCbUI3mo7PsO9act9WW69lCA1ZpLnAs4QM1ciCze/9YfgVQG+sMXGbClDDNFfuuVEV76qRazFzULY0h9Xn/sSy5aLEU52WI6+5ixS6phh++E=
+  file_glob: true
+  file: "build.zip"
+  skip_cleanup: true
+  on:
+    repo: mph121/calc-2-study-guide
