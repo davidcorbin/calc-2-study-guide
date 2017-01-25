@@ -6,16 +6,4 @@ before_install:
 - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-fonts-recommended texlive-latex-extra texlive-fonts-extra dvipng texlive-latex-recommended pgf latexmk
 
 script:
-- cat /etc/apt/sources.list
-- mkdir build
-- mkdir build/tex
 - pdflatex Calc2StudyGuide.tex
-- mv *.pdf build
-- cd tex
-- latexmk -pdf
-- latexmk -c
-- mv *.pdf ../build/tex/
-- cd ..
-
-before_deploy:
-- zip -r build.zip build
