@@ -1,0 +1,61 @@
+%
+% Chapter 6.2
+%
+
+\section*{6.2 Exponential Functions}
+
+If \(b\) is a positive number and \(r\) is rational then,
+\[ b^x= \lim_{r \to x}{b^r} \]
+
+\begin{definition}
+If \( b > 0 \) and \(b \neq 1 \), then \( f(x)=b^x \) is a continuous function with domain \( \mathbb{R} \) and range \( (0, \infty) \). In particular, \(b^x > 0\) for all \(x\). If \( 0 < b < 1 \), \(f(x) = b^x\) is a decreasing function; if \(b>1\), \(f\) is an increasing function. If \(a\), \(b > 0\) and \(x\), \(y \in \mathbb{R}\), then
+\begin{enumerate}
+\item \( b^{x+y}=b^x b^y \)
+\item \( b^{x-y}=\frac{b^x}{b^y} \)
+\item \( {(b^x)}^y=b^{xy} \)
+\item \( {(ab)}^x = a^x b^x \)
+\end{enumerate} 
+\end{definition}
+If \(b>1\), then \( \lim_{x \to \infty}{b^x} = \infty \) and \( \lim_{x \to -\infty}{b^x}=0 \)
+\\
+If \( 0<b<1 \), then \( \lim_{x \to \infty}{b^x} = 0 \) and \( \lim_{x \to -\infty}{b^x} = \infty \)
+
+\subsection*{Definition of the Number \( e \)}
+\(e\) is the number such that \[ \lim_{h \to 0}{\frac{e^h -1}{h}} =1 \]
+
+\subsection*{Derivative of the Natural Exponential Function}
+\[ \frac{d}{dx}(e^x)=e^x \]
+\[ \frac{d}{dx}(e^u)=e^u \frac{du}{dx} \]
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis lines=middle,
+    %grid=both,
+    ymin=-1, ymax=6,
+    xmax=3, xmin=-3,
+    %xtick=\empty, ytick=\empty
+]
+
+% e^x function
+\addplot [
+    domain=-5:5,
+    samples=100
+]
+{e^x};
+\addlegendentry{ \( e^x \)}
+
+% Add dot at (0,1)
+\addplot [only marks] table { 
+0  1 
+};
+ 
+\end{axis}
+\end{tikzpicture}
+\end{center}
+
+\subsection*{Properties of the Natural Exponential Function}
+
+The exponential function \( f(x)=e^x \) is an increasing continuous function with domain \( \mathbb{R} \) and range \( (0, \infty) \). Thus \( e^x > 0 \) for all \(x\). Also, 
+\[ \lim_{x \to -\infty}{e^x} = 0 \quad \quad \lim_{x \to \infty}{e^x} = \infty \]
+So the \(x\)-axis is a horizontal asymptote of \(f(x)=e^x\).
