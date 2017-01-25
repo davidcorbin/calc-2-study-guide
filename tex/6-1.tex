@@ -5,12 +5,33 @@
 \section*{6.1 Inverse Functions}
 
 \theoremstyle{definition}
-\newtheorem{defn}{Definition}
+\newtheorem*{definition}{Theorem}
 
-\begin{defn}
 A function \(f\) is called a \textbf{one-to-one function} if it never takes on the same value twice
 
 \[ f(x_1) \neq f(x_2) \quad \text{ whenever } x_1 \neq x_2 \]
+\\
+\textbf{Horizontal Line Test}: A function is one-to-one \( \Longleftrightarrow \) no horizon line intersects its graph more than once.
+\\\\
+Let \(f\) be a one-to-one function with domain \(A\) and range \(B\). Then its \textbf{inverse function} \(f^(-1)\) has domain \(B\) and range \(A\) and is defined by
+\[ f^{-1}(y)=x \Leftrightarrow f(x)=y \]
+for any \(y\) in \(B\).
+\\
+Note that the -1 in \(f^{-1}\) is not an exponent.
 
-\end{defn}
-  
+\subsection*{How to Find the Inverse Function of a One-to-one Function \(f\)}
+
+\begin{itemize}
+  \item Write \( y=f(x) \).
+  \item Solve this equation for \(x\) in terms of \(y\) (if possible).
+  \item To express \(f^{-1}\) as a function of \(x\), interchange \(x\) and \(y\). The resulting equation \(y=f^{-1}(x)\).
+\end{itemize}
+
+\begin{definition}
+If \(f\) is a one-to-one continuous function defined on an interval, then its inverse function \(f^{-1}\) is also continuous.
+\end{definition}
+
+\begin{definition}
+If \(f\) is a one-to-one differentiable function with inverse function \( f^{-1}\) and \(f'(f^{-1}(a)) \neq 0 \), then the inverse function is differentiable at \(a\) and 
+\[ (f^{-1})'(a) = \frac{1}{f'(f^{-1}(a))} \]
+\end{definition}
