@@ -1,0 +1,45 @@
+%
+% Chapter 6.3
+%
+
+\section*{6.3 Logarithmic Functions}
+
+The inverse of an exponential function is called a \textbf{logarithmic function} with base \(b\) and denoted by \( \log_b \).
+
+\[ \log_b{x} = y \quad \Leftrightarrow \quad b^y = x \]
+
+\subsection*{Graph of a Logarithmic Function}
+
+\begin{center}
+\begin{tikzpicture}
+\begin{axis}[
+axis lines=middle,
+    %grid=both,
+    ymin=-6, ymax=6,
+    xmax=6, xmin=-6,
+    %xtick=\empty, ytick=\empty
+]
+
+% b^x function
+\addplot [
+    dashed
+]
+{e^x};
+\addlegendentry{ \( e^x \)}
+
+% log(x) function
+\addplot [
+    samples=1000
+]
+{ln(x)};
+\addlegendentry{ \( \ln{x} \)}
+
+% Add dot at (0,1)
+\addplot [only marks] table { 
+0  1 
+1  0
+};
+ 
+\end{axis}
+\end{tikzpicture}
+\end{center}
