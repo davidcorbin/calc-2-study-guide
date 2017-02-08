@@ -43,3 +43,36 @@ axis lines=middle,
 \end{axis}
 \end{tikzpicture}
 \end{center}
+
+\[ \log_b (b^x)=x \text{ for every } x \in \mathbb{R} \]
+\[ b^{\log_b x} = x \text{ for every } x > 0 \]
+
+\begin{definition}
+If \(b>1\), the function \(f(x)= \log_b x \) is a one-to-one, continuous, increasing function with domain \( (0, \infty) \) and range \( \mathbb{R} \). If \(x\), \(y > 0\) and \(r\) is any real number, then 
+\begin{enumerate}
+\item \( \log_b(xy) = \log_b x + \log_b y \)
+\item \( \log_b(\frac{x}{y}) = \log_b x - \log_b y \)
+\item \( \log_b(x^r) = r \log_b x \)
+\end{enumerate} 
+\end{definition}
+
+\[ \text{If } b>1 \text{, then } \lim_{x \to \infty} \log_b x = \infty \quad \text{ and } \quad \lim_{x \to 0^+} \log_b x = - \infty \]
+
+\subsection*{Natural Logarithms}
+
+The logarithm with a base \(e\) is called the \textbf{natural logarithm} and special notation:
+\[ \log_e x = \ln x \]
+
+\[ \ln x = y \quad \Leftrightarrow \quad e^y = x \]
+\[ \ln(e^x) = x \quad x \in \mathbb{R} \]
+
+\[ \ln e = 1 \]
+
+\subsubsection*{Change of Base Formula}
+
+For any positive number \(b\) \((b \neq 1)\), we have 
+\[ \log_b x = \frac{\ln x}{\ln b} \] 
+
+\subsubsection*{Growth of the Natural Logarithm}
+
+\[ \lim_{x \to \infty} \ln x = \infty \quad \quad \lim_{x \to 0^+} \ln x = x \infty \]
