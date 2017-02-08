@@ -1,0 +1,39 @@
+%
+% Chapter 6.4
+%
+
+\section*{6.4 Derivatives of Logarithmic Functions}
+
+\[ \frac{d}{dx} (\ln x) = \frac{1}{x} \]
+\[ \frac{d}{dx} (\ln u) = \frac{1}{u} \frac{du}{dx} \]
+\[or\] 
+\[ \frac{d}{dx}[\ln g(x)] = \frac{g'(x)}{g(x)} \]
+
+\[ \frac{d}{dx}(\ln |x|) = \frac{1}{x} \]
+
+\[ \int \frac{1}{x}dx = \ln |x| + C \]
+\[ \int \tan{x} dx = \ln | \sec{x} | + C  \]
+
+\subsection*{General Logarithmic and Exponential Functions}
+
+\[ \frac{d}{dx} (\log_b x) = \frac{1}{x \ln{b}} \]
+\[ \frac{d}{dx} (b^x) = b^x \ln{b} \]
+
+\[ \int b^x dx = \frac{b^x}{\ln{b}} + C \quad b \neq 1 \]
+
+\subsubsection*{Steps to Logarithmic Differentiation}
+\begin{enumerate}
+\item Take the natural log of both side of an equation \(y = f(x)\) and use the properties of logarithms to simplify.
+\item Differentiate implicitly with respect to \(x\).
+\item Solve the resulting equation for \(y'\).
+\end{enumerate}
+
+\subsection*{The Power Rule}
+
+If \(n\) is any real number and \(f(x)=x^n\), then
+\[ f'(x)=nx^{n-1} \]
+
+\subsection*{\(e\) as a Limit}
+
+\[ e = \lim_{x \to 0} {(1 + x)}^{1/x} \]
+\[ e = \lim_{n \to \infty} {(1 + \frac{1}{n})}^n \]
