@@ -7,3 +7,8 @@ before_install:
 
 script:
 - pdflatex Calc2StudyGuide.tex
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always
