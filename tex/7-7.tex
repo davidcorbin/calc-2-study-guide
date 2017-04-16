@@ -1,0 +1,15 @@
+%
+% Chapter 7.7
+%
+
+\section*{7.7 Approximate Integration}
+
+\subsection*{Simpson's Rule}
+
+\[ \int_a^b{f(x)dx} \approx S_n = \frac{\Delta x}{3}[f(x_0) + 4f(x_1) + 2f(x_2) + 4f(x_3) + \cdots + 2f(x_{n-2}) + 4f(x_{n-1}) + f(x_n)] \]
+where \(n\) is even and \(\Delta x = (b-a)/n \).
+
+\subsection*{Error Bound for Simpson's Rule}
+
+Suppose that \(|f^{(4)}(x)| \leq K \) for \(a \leq x \leq b\). If \(E_s\) is the error involved in using Simpson's Rule, then 
+\[ |E_s| \leq \frac{K(b-a)^5}{180n^4} \]
