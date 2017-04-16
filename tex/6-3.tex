@@ -18,6 +18,7 @@ axis lines=middle,
     ymin=-6, ymax=6,
     xmax=6, xmin=-6,
     %xtick=\empty, ytick=\empty
+    unbounded coords=jump
 ]
 
 % b^x function
@@ -25,18 +26,17 @@ axis lines=middle,
     dashed
 ]
 {e^x};
-\addlegendentry{ \( e^x \)}
+\addlegendentry{\( e^x \)}
 
 % log(x) function
 \addplot [
     samples=1000
 ]
 {ln(x)};
-\addlegendentry{ \( \ln{x} \)}
+\addlegendentry{\( \ln{x} \)}
 
 % Add dot at (0,1)
-\addplot [only marks] table { 
-0  1 
+\addplot [only marks] table {0  1 
 1  0
 };
  
