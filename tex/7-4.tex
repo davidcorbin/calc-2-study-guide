@@ -1,0 +1,22 @@
+%
+% Chapter 7.4
+%
+
+\section*{7.4 Integration of Rational Functions by Partial Fractions}
+
+\subsubsection*{If the denominator \(Q(x)\) is a product of distinct linear factors:}
+This means that we can write
+\[ Q(x) = (a_1 x + b_1)(a_2 x + b_2)(a_k x + b_k) \]
+where no factor is repeated (and no factor is a constant multiple of another). In this case the partial faction theorem states that there exist constants \(A_1 \text{, } A_2 \text{, } A_k\) such that
+\[ \frac{R(x)}{Q(x)} = \frac{A_1}{a_1 x + b_1} + \frac{A_2}{a_2 x + b_2} + \cdots + \frac{A_k}{a_k x + b_k} \]
+\subsubsection*{If the denominator is a product of linear factors, some of which are repeated:}
+Suppose the first linear factor \((a_1 x + b_1)\) is repeated \(r\) times; that is, \((a_1 x + b_1)^r\) occurs in the factorization of \(Q(x)\). Then we would use  
+\[ \frac{A_1}{a_1 x + b_1} + \frac{A_2}{(a_1 x + b_1)^2} + \cdots + \frac{A_r}{(a_1 x + b_1)^r} \]
+\subsubsection*{If the denominator \(Q(x)\) contains irreducible quadratic factors, none of which is repeated:}
+If \(Q(x)\) has the factor \(ax^2 + bx + c\), where \(b^2 - 4ac < 0\), then the expression for \( \frac{R(x)}{Q(x)} \) will have a term of the form
+\[ \frac{Ax+B}{ax^2 + bx + c} \] 
+where \(A\) and \(B\) are constants to be determined.
+\subsubsection*{If the denominator \(Q(x)\) contains a repeated irreducible quadratic factor:}
+If \(Q(x)\) has the factor \((ax^2 + bx + c)^r\), where \(b^2 - 4ac < 0\), then instead of the single partial fraction, the sum
+\[ \frac{A_1 x + B}{ax^2 + bx + c} + \frac{A_2x + B_2}{(ax^2 + bx + c)^2} + \cdots + \frac{A_r x + B_r}{(ax^2 + bx + c)^r} \]
+occurs in the partial fraction decomposition of \(\frac{R(x)}{Q(x)}\). Each of the terms in the sum can be integrated by using a substitution of by first completing the square if necessary.
