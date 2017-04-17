@@ -1,0 +1,27 @@
+%
+% Chapter 11.3
+%
+
+\section*{11.3 Integral Test and Estimates of Sums}
+
+\subsection*{Integral Test}
+
+Suppose \(f\) is a continuous, positive, decreasing function on \([1, \infty)\) and let \(a_n = f(n)\). Then the series \(\sum_{n=1}^{\infty}{a_n}\) is convergent if and only if the improper integral \(\int_1^{\infty}{f(x)dx}\) is convergent. In other words:
+\[ \text{If} \int_1^{\infty}{f(x)dx} \text{ is convergent, then} \sum_{n=1}^{\infty}{a_n} \text{ is convergent.} \] 
+\[ \text{If} \int_1^{\infty}{f(x)dx} \text{ is divergent, then } \sum_{n=1}^{\infty}{a_n} \text{ is divergent.} \]
+
+\subsection*{\(P\)-series}
+
+A \textbf{\(p\)-series} is of the form
+\[ \sum_{n=1}^{\infty}{\frac{1}{n^p}} = \frac{1}{1^p} + \frac{1}{2^p} + \frac{1}{3^p} + \cdots \]
+The \(p\)-series \(\sum_{n=1}^{\infty}{\frac{1}{n^p}}\) is convergent if \(p>1\) and divergent if \(p \leq 1\).
+
+\subsection*{Harmonic Series}
+
+When \(p=1\) in a \(p\)-series, the resulting sum is called the \textbf{harmonic series}:
+\[ \sum_{n=1}^{\infty}{\frac{1}{n}} = 1 + \frac{1}{2} + \frac{1}{3} + \cdots \]
+
+\subsection*{Remainder Estimate for the Integral Test}
+
+Suppose \(f(k) = a_l\), where \(f\) is a continuous, positive, decreasing function for \(x \geq n\) and \(\sum{a_n}\) is convergent. If \(R_n = s - s_n\), then
+\[ \int_{n+1}^{\infty}{f(x)dx} \leq R_n \leq \int_n^{\infty}{f(x)dx} \]
