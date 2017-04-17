@@ -1,0 +1,22 @@
+%
+% Chapter 10.2
+%
+
+\section*{10.2 Calculus with Parametric Curves}
+
+\[ \frac{dy}{dx} = \frac{dy}{dt} \times \frac{dt}{dx} = \frac{\frac{dy}{dt}}{\frac{dx}{dt}} \]
+
+\subsection*{Areas}
+
+The area under the curve generated from the parametric equation \(x=f(t)\) and \(y=g(t)\), \(\alpha \leq t \leq \beta\) is
+\[ A = \int_a^b{ydx} = \int_{\alpha}^{\beta}{g(t)f'(t)dt} \]
+
+\subsection*{Arc Length}
+
+If a curve \(C\) is described by the parametric equations \(s = f(t)\), \(y=g(t)\), \(\alpha \leq t \leq \beta\), where \(f'\) and \(g'\) are continuous on \([ \alpha, \beta]\) and \(C\) is traversed exactly once as \(t\) increases from \(\alpha\) to \(\beta\), then the length of \(C\) is
+\[ L = \int_{\alpha}^{\beta}{\sqrt{\bigg(\frac{dx}{dt}\bigg)^2 + \bigg(\frac{dy}{dt} \bigg)^2}dt} \]
+
+\subsection*{Surface Area}
+
+If a curve \(C\) is described by the parametric equations \(x=f(t)\), \(y=g(t)\), \(\alpha \leq t \leq \beta\), where \(f'\), \(g'\) are continuous on \([\alpha, \beta]\) and \(C\) is traversed exactly once as \(t\) increases from \(\alpha\) to \(\beta\), then the length of \(C\) is
+\[ S = \int_{\alpha}^{\beta}{2 \pi y \sqrt{\bigg( \frac{dx}{dt} \bigg)^2 + \bigg( \frac{dy}{dt} \bigg)^2}dt}\]
