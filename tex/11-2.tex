@@ -1,0 +1,30 @@
+%
+% Chapter 11.2
+%
+
+\section*{11.2 Series}
+
+Given a series \(\sum_{n=1}^{\infty}{a_n} = a_1 + a_2 + a_3 + \cdots\), let \(s_n\) denote its \(n\)th partial sum:
+\[ s_n = \sum_{i=1}^n{a_i} = a_1 + a_2 + \cdots + a_n \]
+If the sequence \{\(s_n\)\} is convergent and \(\lim_{n \to \infty}{s_n} = s\) exists as a real number, then the series \(\sum{a_n}\) is called \textbf{convergent} and we write
+\[ a_1 + a_2 + \cdots + a_n + \cdots = s \quad \text{or} \quad \sum_{n=1}^{\infty}{a_n} = s \]
+The number \(s\) is called the \textbf{sum} of the series. If the sequence \{\(s_n\)\} is divergent, then the series is called \textbf{divergent}.
+
+\subsection*{Geometric Series}
+
+The geometric series
+\[ \sum_{n=1}^{\infty}{ar^{n-1}} = a + ar + ar^2 + \cdots \]
+is convergent if \(|r| < 1\) and its sum is
+\[ \sum_{n=1}^{\infty}{ar^{n-1}} = \frac{a}{1-r} \quad |r| < 1\]
+If \(|r| \geq 1\), the geometric series is divergent.
+
+\subsection*{Test for Divergence}
+
+If \(\lim_{n \to \infty}{a_n}\) does not exist or if \( \lim_{n \to \infty}{a_n} \neq 0\), them the series \(\sum_{n=1}^{\infty}{a_n}\) is divergent.
+
+\subsubsection*{Theorem}
+
+If \(\sum{a_n}\) and \(\sum{b_n}\) are convergent series, then so are the series \(\sum{c a_n}\) (where \(c\) is a constant), \(\sum{(a_n + b_n)}\), and \(\sum{(a_n - b_n)}\), and
+\[ \sum_{n=1}^{\infty}{c a_n} = c \sum_{n=1}^{\infty}{a_n} \]
+\[ \sum_{n=1}^{\infty}{(a_n + b_n)} = \sum_{n=1}^{\infty}{a_n} + \sum_{n=1}^{\infty}{b_n} \]
+\[ \sum_{n=1}^{\infty}{(a_n - b_n)} = \sum_{n=1}^{\infty}{a_n} - \sum_{n=1}^{\infty}{b_n} \]
