@@ -1,0 +1,56 @@
+%
+% Chapter 11.1
+%
+
+\section*{Sequences}
+
+A \textbf{sequence} can be though of as a list of numbers written in a definite order. 
+
+\subsection*{The Fibonacci sequence}
+
+\[ f_1 = 1 \quad f_2 = 1 \quad f_n = f_{n-1} + f_{n-2} \quad n \geq 3 \]
+
+\subsection*{Limits of Sequences}
+
+\subsubsection*{Intuitive Definition}
+
+A sequence \({a_n}\) has the \textbf{limit} \(L\) and we write
+\[ \lim_{n \to \infty}{a_n = L} \quad \text{or} \quad a_n \to L \text{ as } n \to \infty \]
+if we can make the terms \(a_n\) as close to \(L\) as we like by taking \(n\) sufficiently large. If \(\lim_{n \to \infty} a_n\) exists, we say the sequence \textbf{converges}. Otherwise, we say the sequence \textbf{diverges}.
+
+\subsubsection*{Precise Definition}
+
+A sequence \({a_n}\) has the \textbf{limit} \(L\) and we write
+\[\lim_{n \to \infty}{a_n = L} \quad \text{or} \quad a_n \to L \text{ as } n \to \infty \]
+if for every \( \epsilon > N \) there is a corresponding integer \(N\) such that 
+\[ \text{if} \quad n > N \quad \text{then} \quad |a_n - L| < \epsilon \]
+
+\subsection*{Limit Laws for Sequences}
+
+If \{\(a_n\)\} and \{\(b_n\)\} are convergent sequences and \(c\) is a constant, then
+\[ \lim_{n \to \infty}{(a_n + b_n)} = \lim_{n \to \infty}{a_n} + \lim_{n \to \infty}{b_n} \]
+\[ \lim_{n \to \infty}{(a_n - b_n)} = \lim_{n \to \infty}{a_n} - \lim_{n \to \infty}{b_n} \]
+\[ \lim_{n \to \infty}{c a_n} = c \lim_{n \to \infty}{a_n} \quad \lim_{n \to \infty}{c} = c \]
+\[ \lim_{n \to \infty}{(a_n b_n)} = \lim_{n \to \infty}{a_n} \times \lim_{n \to \infty}{b_n} \]
+\[ \lim_{n \to \infty}{\frac{a_n}{b_n}} = \frac{\lim_{n \to \infty}{a_n}}{\lim_{n \to \infty}{b_n}} \quad \text{ if } \quad \lim_{n \to \infty}{b_n \neq 0} \]
+\[ \lim_{n \to \infty}{a_n^p} = \Big[\lim_{n \to \infty}{a_n} \Big]^p \quad \text{ if } \quad p > 0 \text{ and } a_n > 0 \]
+
+\subsection*{Squeeze Theorem for Sequences}
+
+If \(a_n \leq b_n \leq c_n\) for \(n \geq n_0\) and \( \lim_{n \to \infty}{a_n} = \lim_{n \to \infty}{c_n} = L\), then \( \lim_{n \to \infty}{b_n} = L\).
+
+\subsection*{Increasing and Decreasing Sequences}
+
+A sequence \{\(a_n\)\} is called \textbf{increasing} if \(a_n < a_{n+1}\) for all \(n \geq 1\), that is, \(a_1 < a_2 < a_3 < \cdots\). It is called \textbf{decreasing} if \(a_n > a_{n+1}\) for all \(n \geq 1\). A sequence is \textbf{monotonic} if it is increasing or decreasing.
+
+\subsection*{Sequence Bounds}
+
+A sequence \{\(a_n\)\} is \textbf{bounded above} if there us a number \(M\) such that
+\[ a_n \leq M \quad \text{for all } n \geq 1 \]
+If is \textbf{bounded below} if there is a number \(m\) such that
+\[ m \leq a_n \quad \text{for all } n \geq 1 \]
+If it is bounded above and below, then \{\(a_n\)\} it a \textbf{bounded sequence}.
+
+\subsection*{Monotonic Sequence Theorem}
+
+Every bounded, monotonic sequence is convergent.
