@@ -1,0 +1,36 @@
+%
+% Chapter 11.10
+%
+
+\section*{11.10 Taylor and Maclaurin Series}
+
+If \(f\) has a power series representation at \(a\), that is, if
+\[ f(x) = \sum_{n=0}^{\infty}{c_n(x-a)^n} \quad |x-a|<R\]
+then its coefficients are given by the formula
+\[c_n = \frac{f^{(n)}(a)}{n!}\]
+
+\subsection*{Taylor Series of the Function \(f\) at \(a\)}
+
+\[ f(x) = \sum_{n=0}^{\infty}{\frac{f^{(n)}(a)}{n!}(x-a)^n}\]
+
+\subsection*{Maclaurin Series}
+
+\[f(x) = \sum_{n=0}^{\infty}{\frac{f^{(n)}(0)}{n!}x^n} = f(0)
++ \frac{f'(0)}{1!}x + \frac{f''{0}}{2!}x^2 + \cdots\]
+
+\subsection*{Taylor's Inequality}
+
+If \(|f^{(n+1)}{(x)}| \leq M\) for \(|x-a| \leq d\), then the remainder
+\(R_n(x)\) of the Taylor series satisfies the inequality
+\[ |R_n(x)| \leq \frac{M}{(n+1)!}|x-a|^{n+1} \quad \text{ for } \quad |x-a| \leq
+d\]
+
+\subsubsection*{Power Series to Memorize}
+
+\[e^x = \sum_{n=0}^{\infty}{\frac{x^n}{n!}} \quad \text{ for all } x\]
+\[ \frac{1}{1-x} = 1 + x + x^2 + x^3 + \cdots = \sum_{n=0}^{\infty}{x^n} \quad
+|x| < 1\]
+\[ \sin{x} = \sum_{n=0}^{\infty}{(-1)^n \frac{x^{2n+1}}{(2n+1)!}} \quad
+\text{ for all } x\] 
+\[ \cos{x} = \sum_{n=0}^{\infty}{(-1)^n \frac{x^{2n}}{(2n)!}} \quad
+\text{ for all } x\] 

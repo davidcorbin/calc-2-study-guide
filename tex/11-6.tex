@@ -1,0 +1,37 @@
+%
+% Chapter 11.6
+%
+
+\section*{11.6 Absolute Convergence and the Ratio and Root Tests}
+
+A series \(\sum{a_n}\) is called \textbf{absolutely convergent} if the series of
+absolute values \(\sum{|a_n|}\) is convergent.
+\newline
+A series \(\sum{a_n}\) is called \textbf{conditionally convergent} if it is
+convergent but not absolutely convergent.
+\newline
+If a series \(\sum{a_n}\) is absolutely convergent, then it is convergent. 
+
+\subsection*{The Ratio Test}
+
+\begin{itemize}
+    \item If \(\lim_{n \to \infty}{\big|\frac{a_{n+1}}{a_n}\big|}=L<1\), then
+the series \(\sum_{n=1}^{\infty}{a_n}\) is absolutely convergent.
+    \item If \(\lim_{n \to \infty}{\big|\frac{a_{n+1}}{a_n}\big|}=L>1\) or
+\(\lim_{n \to \infty}{\big|\frac{a_{n+1}}{a_n}\big|}=\infty\), then the series
+\(\sum_{n=1}^{\infty}{a_n}\) is divergent.
+    \item If \(\lim_{n \to \infty}{\big|\frac{a_{n+1}}{a_n}\big|}=1\), the Ratio
+Test is inconclusive.
+\end{itemize}
+
+\subsection*{The Root Test}
+
+\begin{itemize}
+    \item If \(\lim_{n \to \infty}{\sqrt[n]{|a_n|}} = L < 1\), then the series
+\(\sum_{n=1}^{\infty}{a_n}\) is absolutely convergent.
+    \item If \(\lim_{n \to \infty}{\sqrt[n]{|a_n|}} = L > 1\) or \(\lim_{n \to
+\infty}{\sqrt[n]{|a_n|}} = \infty\), then the series
+\(\sum_{n=1}^{\infty}{a_n}\) is divergent.
+    \item If \(\lim_{n \to \infty}{\sqrt[n]{|a_n|}} = 1\), the root test is
+inconclusive.
+\end{itemize}

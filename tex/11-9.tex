@@ -1,0 +1,26 @@
+%
+% Chapter 11.9
+%
+
+\section*{11.9 Representations of Functions as Power Series}
+
+\subsubsection*{Geometric Series}
+
+\[ \frac{1}{1-x} = 1 + x + x^2 + x^3 + \cdots = \sum_{n=0}^{\infty}{x^n} \quad
+|x| < 1\]
+
+\subsection*{Term-by-term Differentiation and Integration}
+
+If the power series \(\sum{c_n(x-a)^n}\) has the radius of convergence \(R
+> 0\), then the function \(f\) defined by
+\[f(x) = c_0 + c_1(x-a) + c_2(x-a)^2 + \cdots
+= \sum_{n=0}^{\infty}{c_n(x-a)^n}\]
+is differentiable on the interval \(a-R, a+R\) and
+\begin{enumerate}
+    \item \(f'(x) = c_1 + 2c_2(x-a) + 3c_3(x-a)^2 + \cdots
+= \sum_{n=0}^{\infty}{nc_n(x-a)^{n-1}}\)
+    \item \( \int{f(x)dx} = C + c_0(x-a) + c_1 \frac{(x-a)^2}{2} + c_2
+\frac{(x-a)^3}{3} + \cdots = C + \sum_{n=0}^{\infty}{c_n
+\frac{(x-a)^{n+1}}{n+1}} \)
+\end{enumerate}
+The radii of convergence of the two power series above are both \(R\).
